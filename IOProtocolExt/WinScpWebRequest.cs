@@ -353,7 +353,7 @@ namespace IOProtocolExt
 					Uri uriTarget = new Uri(m_whcHeaders.Get(
 						IOConnection.WrhMoveFileTo));
 
-					sbScript.AppendLine("mv \"" + strRemoteFile + "\" \"" +
+					sbScript.AppendLine("mv \"" + strRemoteFile + "\" .\"" +
 						uriTarget.AbsolutePath + "\"");
 				}
 			}
